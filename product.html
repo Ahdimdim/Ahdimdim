@@ -33,7 +33,8 @@
         justify-content: center;
       }
       .product .review .box .picture {
-        background: lavender;
+        background: #ddd;
+        an
       }
       .product .review .box .desc {
         width: 400px;
@@ -48,22 +49,25 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
       }
       .product .news .box {
         width: 285px;
         height: 250px;
-        animation: news 3s infinite both;
-        background: url(images/220600_final_Happybath_news-banner_main_pc.jpg);
+        background: url(images/news1.jpg) no-repeat;
+        animation: news 2s infinite both;
+        border: 1px solid transparent;
       }
       @keyframes news {
-        0%, {
-            animation-timing-function: linear;
-            background-image: url(images/220600_final_Happybath_news-banner_main_pc.jpg);
+        0% {
+          background: url(images/news1.jpg);
         }
-        100%{
-            animation-timing-function: linear;
-            background-image: url(images/220405_final_Happybath_news_banner_pc.jpg);
+        100% {
+          background: url(images/news2.jpg);
         }
+      }
+      .product .box:hover {
+        border-color: #000;
       }
     </style>
   </head>
@@ -73,13 +77,13 @@
         <h2>제품리뷰</h2>
         <div class="box">
           <div class="picture">
-            <img src="images/collection_cherry-blossom_231x251.png" alt="review1" />
+            <img src="images/review1.png" alt="review1" />
           </div>
           <div class="desc">
             <p>[오리지널컬렉션 체리블로섬 바디워시]</p>
             <p class="star">
-              <span>flrr***</span>
-              <span><img src="images/detail-review-star5.png" alt="별" /></span>
+              <span>flrr</span>
+              <span><img src="images/star.png" alt="별" /></span>
             </p>
             <p>
               정말 오랜만에 향기도 좋고 성분도 착한 바디워시를 만났어요!
