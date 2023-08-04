@@ -17,8 +17,18 @@
             text-decoration: none;
             color: #333;
         }
+        @font-face {
+                font-family:NanumBarunGothic,"나눔 바른", sans-serif;
+                src: url(webfonts/NanumBarunGothic.woff) format("woff"),
+                url(webfonts/NanumBarunGothicBold.woff) format("woff");
+            }
+        @font-face {
+            font-family:NanumGothic, "나눔 고딕", sans-serif;
+            src: url(webfonts/NanumGothic.woff) format("woff"),
+            url(webfonts/NanumGothicExtraBold.woff) format("woff");
+        }
         body{
-            font-family: arial,"나눔 고딕", sans-serif;
+            font-family: NanumBarunGothic,"나눔 고딕", sans-serif;
         }
         header .top_bg{
             background: url(images/bg_header.gif);
@@ -60,6 +70,11 @@
             text-align: center;
             display: flex;
             justify-content: space-between;
+        }
+        header .topmenu .menu a{
+            font-size: 13px;
+            font-weight: 900;
+            color: #483834;
         }
         .menu .member{
             width: 131px;
@@ -139,12 +154,11 @@
         .br-menu{
             margin: 0 auto;
             background: url(images/bg_menu.jpg) 50% 0 no-repeat;
-            /* width: 2500px; */
             height: 1157px;
         }
         .br-menu>h3{
             text-align: center;
-            padding: 78px 0 0;
+            padding-top: 78px;
         }
         .br-menu>.menu_list{
             position: relative;
@@ -231,7 +245,6 @@
             width: 1200px;
             height: 77px;
             margin: 0 auto;
-            padding: 0 80px;
         }
         .policy ul{
             display: flex;
