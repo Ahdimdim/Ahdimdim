@@ -58,118 +58,132 @@
       header .top .right ul li a {
         font-size: 11px;
       }
-      header .topmenu {
+      .menu-bar {
         position: relative;
-        border-top: 1px solid rgb(226, 217, 214);
-        box-sizing: border-box;
+        background-color:white;
       }
-      header .topmenu .menu {
-        margin: 0 auto;
-        width: 1200px;
-        height: 46px;
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-      }
-      header .topmenu .menu a {
-        font-size: 13px;
-        font-weight: 900;
-        color: #483834;
-      }
-      header .topmenu .menu .member ul li:first-child a{
-        color: rgb(255, 124, 152);
-      }
-      header .topmenu .menu .member ul li:nth-child(2) a{
-        color: #848484;
-      }
-      .menu .member {
-        width: 131px;
-      }
-      .menu .member > ul {
-        display: flex;
-        height: 100%;
-        align-items: center;
-      }
-      .menu .member > ul > li {
-        padding-right: 40px;
-      }
-      .menu #gnb {
-        width: 982px;
-      }
-      .menu #gnb > ul {
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .menu #gnb > ul > li {
-        position: relative;
-        width: 150px;
-        height: 100%;
-      }
-      .menu #gnb > ul > li > a {
-        line-height: 46px;
-      }
-      .menu #gnb > ul > li:first-of-type {
-        width: 200px;
-      }
-      .menu #gnb > ul > li > ul {
-        position: absolute;
-        width: 100%;
-        height: 0px;
-        top: 47px;
-        left: 0;
-        overflow: hidden;
-        transition: height 0.4s;
-        z-index: 1;
-        background: #fff;
-      }
-      .menu #gnb > ul > li:first-child > ul> li{
-        padding: 0;
-      }
-      .menu #gnb > ul > li > ul:first-child > li{
-        padding-top: 30px;
-      }
-      .menu #gnb > ul > li > ul >li{
-        padding: 10px 0px;
-      }
-      /* .menu #gnb > ul > li:first-child > ul > li:first-of-type {
-        position: absolute;
-        left: -250px;
-        top: 50px;
-      } */
-      #gnb > .bg {
-        position: absolute;
-        height: 0px;
-        width: 100%;
-        left: 0px;
-        top: 46px;
-        background: #fff;
-        transition: height 0.4s;
-        border-bottom: 1px solid rgb(105, 51, 55);
-      }
-      #gnb:hover > ul > li > ul {
-        height: 259px;
-      }
-      #gnb:hover > .bg {
-        background: #fff;
-        height: 259px;
-        border-top: 1px solid rgb(105, 51, 55);
-      }
-      #gnb > .bg > div{
-        background: url(images/img_happypoint_app.jpg) no-repeat;
+
+    .menu-bar > .menu-area {
         width:1200px;
-        height:0px;
         margin:0 auto;
-        overflow: hidden;
+        display: flex;
+      }
+
+    .menu-bar > .menu-area > div {
+        height:46px;
+        line-height:46px;
+        display: flex;
+    }
+
+    .menu-bar > .menu-area > .cell > div > a {
+        padding: 0 23px;
+        display:block;
+        font-size:10.5px;
+        font-weight:bold;
+        letter-spacing:0.5px;
+    }
+
+    .menu-bar > .menu-area > .cell > div > a.login {
+        color:#FB9BB8;
+    }
+    .menu-bar > .menu-area > .cell-right > .wrap > div > a { 
+        font-size:13px;
+        font-weight:bold;
+        letter-spacing:0.5px;
+        padding:0 59px;
+    }
+
+    .menu-bar > .menu-area > .cell-right > .wrap > div:last-child > a {
+        padding-right:0;
+    }
+
+    /* 우측 메뉴 */
+    .menu-bar .cell-right .wrap > .cell {
+        position:relative;
+    }
+
+    .menu-bar .cell-right ul.sub {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        height: 0;
+        width:100%;
+        z-index: 1000;
+        font-size: 13.5px;
+        font-weight: 300;
+        text-align: center;
+        transition: height .5s ease;
+        transform:translateX(-50%);
+    }
+
+    .menu-bar .cell-right div.about ul {
+        padding-left:50px;
+    }
+
+    .menu-bar .cell-right:hover ul {
+        opacity:1;
+    }
+    .menu-bar .cell-right:hover ul.sub {
+        overflow: visible;
+    }
+
+    .menu-bar .cell-right div.cell > ul > li:first-child {
+        padding-top:40px;
+    }
+
+    .menu-bar .cell-right div.cell.flavor > ul > li:first-child {
+        padding-top:0;
+    }
+
+    .menu-bar .cell-right div.cell > ul > li {
+        height:38px;
+    }
+
+    .menu-bar .cell-right .bg {
+        overflow:hidden;
+        position:absolute;
+        top:100%;
+        left:0;
+        height:0;
+        z-index:999;
+        min-width:100%;
+        border-bottom:1px solid #693337;
+        transition:height .5s ease;
+        background-color:white;
+    }
+    .menu-bar .cell-right:hover .bg {
+        height:275px;
+        border-top:1px solid #693337;
+    }
+    .menu-bar .cell-right .bg > div {
+        background-image:url(https://www.baskinrobbins.co.kr/assets/images/common/img_happypoint_app.jpg);
+        width:1200px;
+        height:204px;
+        margin:0 auto;
         background-position:0 65px;
         background-repeat:no-repeat;
         background-color:transparent;
-        transition: height 0.4s;
-      }
-      #gnb:hover > .bg > div{
-        height:259px;
-      }
+    }
+    .cell-right .sub > li {
+        color:#948780;
+    }
+
+    .cell-right .sub > li a:hover {
+        color:#ff75ac;
+    }
+
+    .cell-right .sub {
+        opacity:0;
+        visibility:hidden;
+        transition:opacity 0s, visibility 0s !important;
+    }
+
+    .cell-right:hover .sub {
+        visibility:visible;
+        opacity:1;
+        transition:opacity 1s .3s, visibility 1s .3s !important;
+    }
+
       .content {
         padding: 0 0 130px;
       }
@@ -451,80 +465,60 @@
             </div>
           </div>
         </div>
-        <div class="topmenu">
-          <div class="menu">
-            <nav class="member">
-              <ul>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">JOIN</a></li>
-              </ul>
-            </nav>
-            <nav id="gnb">
-              <ul>
-                <li>
-                  <a href="#">FLAVOR OF THE MONTH</a>
-                  <ul>
-                    <!-- <li>
-                      <a href="#"
-                        ><img src="images/img_happypoint_app.jpg" alt=""
-                      /></a>
-                    </li> -->
-                    <li>
-                      <a href="#"
-                        ><img src="images/img_monthly_fom_230630.png" alt=""
-                      /></a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">MENU</a>
-                  <ul>
-                    <li><a href="#">아이스크림</a></li>
-                    <li><a href="#">아이스크림케이크</a></li>
-                    <li><a href="#">음료</a></li>
-                    <li><a href="#">커피</a></li>
-                    <li><a href="#">디저트</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">영양 성분 및 알레르기</a>
-                  <ul>
-                    <li><a href="#">아이스크림</a></li>
-                    <li><a href="#">음료</a></li>
-                    <li><a href="#">커피</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">EVENT</a>
-                  <ul>
-                    <li><a href="#">진행중이벤트</a></li>
-                    <li><a href="#">당첨자발표</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">STOR</a>
-                  <ul>
-                    <li><a href="#">매장찾기</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">단체주문</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">ABOUT</a>
-                  <ul>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">보도자료</a></li>
-                    <li><a href="#">채용정보</a></li>
-                    <li><a href="#">점포개설문의</a></li>
-                    <li><a href="#">CONTACTUS</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="bg">
-                <div></div>
-              </div>
-            </nav>
-          </div>
+        <div class="menu-bar relative">
+            <div class="menu-area con row">
+                <div class="cell row">
+                    <div class="cell"><a class="login" href="#">LOGIN</a></div>
+                    <div class="cell"><a class="join" href="#">JOIN</a></div>
+                </div>
+                <div class="cell-right">
+                    <div class="wrap">
+                        <div class="cell flavor">
+                            <a href="#">FLAVOR OF THE MONTH</a>
+                            <ul class="sub photo">
+                                <li><a href="#"><img src="https://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="cell menu">
+                            <a href="#">MENU</a>
+                            <ul class="sub">
+                                <li><a href="#">아이스크림</a></li>
+                                <li><a href="#">아이스크림케이크</a></li>
+                                <li><a href="#">음료</a></li>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">디저트</a></li>
+                            </ul>
+                        </div>
+                        <div class="cell event">
+                            <a href="#">EVENT</a>
+                            <ul class="sub">
+                                <li><a href="#">진행중이벤트</a></li>
+                                <li><a href="#">당첨자발표</a></li>
+                            </ul>
+                        </div>
+                        <div class="cell store">
+                            <a href="#">STORE</a>
+                            <ul class="sub">
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">고객센터</a></li>
+                            </ul>
+                        </div>
+                        <div class="cell about">
+                            <a href="#">ABOUT</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">점포개설문의</a></li>
+                                <li><a href="#">CONTACNT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
       </header>
       <article class="content">
