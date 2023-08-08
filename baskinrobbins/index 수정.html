@@ -99,90 +99,94 @@
 
     /* 우측 메뉴 */
     .menu-bar .cell-right .wrap > .cell {
-        position:relative;
-    }
+    position:relative;
+}
 
-    .menu-bar .cell-right ul.sub {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        height: 0;
-        width:100%;
-        z-index: 1000;
-        font-size: 13.5px;
-        font-weight: 300;
-        text-align: center;
-        transition: height .5s ease;
-        transform:translateX(-50%);
-    }
+.menu-bar .cell-right ul.sub {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 0;
+    width:100%;
+    z-index: 1000;
+    font-size: 13.5px;
+    font-weight: 300;
+    text-align: center;
+    transition: height .5s ease;
+    transform:translateX(-50%);
+}
 
-    .menu-bar .cell-right div.about ul {
-        padding-left:50px;
-    }
+.menu-bar .cell-right div.about ul {
+    padding-left:50px;
+}
 
-    .menu-bar .cell-right:hover ul {
-        opacity:1;
-    }
-    .menu-bar .cell-right:hover ul.sub {
-        overflow: visible;
-    }
+.menu-bar .cell-right:hover ul {
+    opacity:1;
+}
+.menu-bar .cell-right:hover ul.sub {
+    overflow: visible;
+}
 
-    .menu-bar .cell-right div.cell > ul > li:first-child {
-        padding-top:40px;
-    }
+.menu-bar .cell-right div.cell > ul > li:first-child {
+    padding-top:40px;
+}
 
-    .menu-bar .cell-right div.cell.flavor > ul > li:first-child {
-        padding-top:0;
-    }
+.menu-bar .cell-right div.cell.flavor > ul > li:first-child {
+    padding-top:0;
+}
 
-    .menu-bar .cell-right div.cell > ul > li {
-        height:38px;
-    }
+.menu-bar .cell-right div.cell > ul > li {
+    height:38px;
+}
 
-    .menu-bar .cell-right .bg {
-        overflow:hidden;
-        position:absolute;
-        top:100%;
-        left:0;
-        height:0;
-        z-index:999;
-        min-width:100%;
-        border-bottom:1px solid #693337;
-        transition:height .5s ease;
-        background-color:white;
-    }
-    .menu-bar .cell-right:hover .bg {
-        height:275px;
-        border-top:1px solid #693337;
-    }
-    .menu-bar .cell-right .bg > div {
-        background-image:url(https://www.baskinrobbins.co.kr/assets/images/common/img_happypoint_app.jpg);
-        width:1200px;
-        height:204px;
-        margin:0 auto;
-        background-position:0 65px;
-        background-repeat:no-repeat;
-        background-color:transparent;
-    }
-    .cell-right .sub > li {
-        color:#948780;
-    }
+.menu-bar .cell-right .bg {
+    overflow:hidden;
+    position:absolute;
+    top:100%;
+    left:0;
+    height:0;
+    z-index:999;
+    min-width:100%;
+    border-bottom:1px solid #693337;
+    transition:height .5s ease;
+    background-color:white;
+}
 
-    .cell-right .sub > li a:hover {
-        color:#ff75ac;
-    }
+.menu-bar .cell-right:hover .bg {
+    height:275px;
+    border-top:1px solid #693337;
+}
 
-    .cell-right .sub {
-        opacity:0;
-        visibility:hidden;
-        transition:opacity 0s, visibility 0s !important;
-    }
+.menu-bar .cell-right .bg > div {
+    background-image:url(https://www.baskinrobbins.co.kr/assets/images/common/img_happypoint_app.jpg);
+    width:1200px;
+    height:204px;
+    margin:0 auto;
+    background-position:0 65px;
+    background-repeat:no-repeat;
+    background-color:transparent;
+}
 
-    .cell-right:hover .sub {
-        visibility:visible;
-        opacity:1;
-        transition:opacity 1s .3s, visibility 1s .3s !important;
-    }
+.cell-right .sub > li {
+    color:#948780;
+}
+
+.cell-right .sub > li a:hover {
+    color:#ff75ac;
+}
+
+.cell-right .sub {
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 0s, visibility 0s !important;
+}
+
+.cell-right:hover .sub {
+    visibility:visible;
+    opacity:1;
+    transition:opacity 1s .3s, visibility 1s .3s !important;
+}
+
 
       .content {
         padding: 0 0 130px;

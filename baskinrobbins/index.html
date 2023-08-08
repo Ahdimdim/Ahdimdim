@@ -82,6 +82,7 @@
       header .topmenu .menu .member ul li:nth-child(2) a{
         color: #848484;
       }
+      /* 메뉴 시작 */
       .menu .member {
         width: 131px;
       }
@@ -122,22 +123,21 @@
         overflow: hidden;
         transition: height 0.4s;
         z-index: 1;
-        background: #fff;
       }
-      .menu #gnb > ul > li:first-child > ul> li{
-        padding: 0;
+      .menu #gnb > ul > li > ul > li:first-child {
+        padding-top: 40px;
       }
-      .menu #gnb > ul > li > ul:first-child > li{
-        padding-top: 30px;
+      .menu #gnb > ul > li > ul.month-ice > li {
+        padding-top: 10px;
+        opacity: 0;
+        transition: 0.8s 0.3s;
+      }
+      .menu #gnb:hover > ul > li > ul.month-ice > li{
+        opacity: 1;
       }
       .menu #gnb > ul > li > ul >li{
-        padding: 10px 0px;
+        padding: 10px 0px 0 0;
       }
-      /* .menu #gnb > ul > li:first-child > ul > li:first-of-type {
-        position: absolute;
-        left: -250px;
-        top: 50px;
-      } */
       #gnb > .bg {
         position: absolute;
         height: 0px;
@@ -145,15 +145,15 @@
         left: 0px;
         top: 46px;
         background: #fff;
-        transition: height 0.4s;
+        transition: height 0.5s;
         border-bottom: 1px solid rgb(105, 51, 55);
       }
       #gnb:hover > ul > li > ul {
-        height: 259px;
+        height: 269px;
       }
       #gnb:hover > .bg {
         background: #fff;
-        height: 259px;
+        height: 269px;
         border-top: 1px solid rgb(105, 51, 55);
       }
       #gnb > .bg > div{
@@ -165,11 +165,18 @@
         background-position:0 65px;
         background-repeat:no-repeat;
         background-color:transparent;
-        transition: height 0.4s;
+        transition: height 0.5s;
       }
       #gnb:hover > .bg > div{
         height:259px;
       }
+      #gnb > ul > li > ul > li > a{
+        color: #7b7b7b;
+      }
+      #gnb > ul > li > ul > li > a:hover{
+        color: rgb(255, 124, 152);
+      }
+      /* 메뉴 끝 */
       .content {
         padding: 0 0 130px;
       }
@@ -463,12 +470,7 @@
               <ul>
                 <li>
                   <a href="#">FLAVOR OF THE MONTH</a>
-                  <ul>
-                    <!-- <li>
-                      <a href="#"
-                        ><img src="images/img_happypoint_app.jpg" alt=""
-                      /></a>
-                    </li> -->
+                  <ul class="month-ice">
                     <li>
                       <a href="#"
                         ><img src="images/img_monthly_fom_230630.png" alt=""
