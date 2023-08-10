@@ -131,7 +131,7 @@
         padding-top: 40px;
       }
       .menu #gnb > ul > li > ul.month-ice > li {
-        padding-top: 10px;
+        padding-top: 0px;
         opacity: 0;
         transition: 0.8s 0.3s;
       }
@@ -194,7 +194,7 @@
       .list_product .line_title {
         position: relative;
         padding: 114px 0 25px 0;
-        height: 40px;
+        height: 64px;
         width: 100%;
         font-size: 17px;
         text-align: center;
@@ -226,7 +226,7 @@
         display: block;
         width: 70px;
         height: 20px;
-        margin: 10px auto 25px;
+        margin: 20px auto;
         border-radius: 25px;
         border: 2px solid #ece2de;
         color: #a48e74;
@@ -344,6 +344,66 @@
         padding: 12px 0 0;
         color: #b1adab;
       }
+      .list_product .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-left: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+      }
+      .list_product .list .item {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-right: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+      .list_product .list:first-of-type .item {
+        background: url(images/bg_icecream_corn_3.png) no-repeat bottom;
+        background-size: 50px;
+      }
+      .list_product .list figcaption {
+        width: 298px;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 30px;
+      }
+      .list_product .list .item img {
+        position: absolute;
+        left: 60px;
+        bottom: 8px;
+        width: 180px;
+        height: 180px;
+      }
+      .list .item .hashtag_buy ul {
+        display: flex;
+        justify-content: center;
+      }
+      .list .item .hashtag_buy ul li {
+        padding-right: 5px;
+      }
+      .list .item .hashtag_buy ul li a {
+        font-size: 13px;
+        color: #9d9d9d;
+      }
+      .list .item .buy {
+        text-align: center;
+        padding-top: 7px;
+      }
+      .list .item .buy a {
+        display: inline-block;
+        line-height: 21px;
+        width: 58px;
+        height: 21px;
+        font-size: 11px;
+        background: #d3c1ab;
+        border-radius: 25px;
+        color: #fff;
+      }
     </style>
   </head>
   <body>
@@ -395,17 +455,17 @@
             <nav id="gnb">
               <ul>
                 <li>
-                  <a href="#">FLAVOR OF THE MONTH</a>
+                  <a href="flavor_of_the_month.html">FLAVOR OF THE MONTH</a>
                   <ul class="month-ice">
                     <li>
-                      <a href="#"
-                        ><img src="images/img_monthly_fom_230630.png" alt=""
+                      <a href="flavor_of_the_month.html"
+                        ><img src="images/img_monthly_fom_230731.png" alt=""
                       /></a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#">MENU</a>
+                  <a href="menu.html">MENU</a>
                   <ul>
                     <li><a href="sub_icecream.html">아이스크림</a></li>
                     <li>
@@ -496,6 +556,684 @@
                     <ul>
                       <li><a href="#">#노티드</a></li>
                       <li><a href="#">#이달의맛</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product icecream">
+                  <figure>
+                    <figcaption>
+                      <span>엄마는 외계인</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1528197022.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#초콜릿</a></li>
+                      <li><a href="#">#초코볼</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product icecream">
+                  <figure>
+                    <figcaption>
+                      <span>아몬드 봉봉</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1452062933.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#아몬드</a></li>
+                      <li><a href="#">#초콜릿</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product icecream">
+                  <figure>
+                    <figcaption>
+                      <span>민트 초콜릿칩</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1670827206.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#민트</a></li>
+                      <li><a href="#">#초콜릿칩</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <h3 class="line_title">
+              <div class="inner">
+                <span><img src="images/h_title_B.png" alt="" /></span>
+                <div class="line"></div>
+              </div>
+              <a href="sub_icecreamcake.html" class="menu_more">MORE</a>
+            </h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="product icecreamcake">
+                  <figure>
+                    <figcaption>
+                      <span>노티드 스마일 크림 버니</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1751850550.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#크림버니</a></li>
+                      <li><a href="#">#이달의케이크</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product icecreamcake">
+                  <figure>
+                    <figcaption>
+                      <span>초코 퐁당 브라운 베어</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1730868006.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#브라운베어</a></li>
+                      <li><a href="#">#초코케이크</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product icecreamcake">
+                  <figure>
+                    <figcaption>
+                      <span>헬로키티의 핑크 드레스</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1746507423.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#헬로키티</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product icecreamcake">
+                  <figure>
+                    <figcaption>
+                      <span>미니 베리 타르트</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1749176226.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#스트로베리</a></li>
+                      <li><a href="#">#타르트</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="line_title">
+              <div class="inner">
+                <span><img src="images/h_title_C.png" alt="" /></span>
+                <div class="line"></div>
+              </div>
+              <a href="sub_icecream.html" class="menu_more">MORE</a>
+            </h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="product beverage">
+                  <figure>
+                    <figcaption>
+                      <span>파인히비스커스 워터 블라스트</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1746500305.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#파인히비스커스</a></li>
+                      <li><a href="#">#블라스트</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product beverage">
+                  <figure>
+                    <figcaption>
+                      <span>체리 워터 블라스트</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1746500244.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#체리맛</a></li>
+                      <li><a href="#">#블라스트</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product beverage">
+                  <figure>
+                    <figcaption>
+                      <span>리치 워터 블라스트</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1746500147.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#리치맛</a></li>
+                      <li><a href="#">#블라스트</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product beverage">
+                  <figure>
+                    <figcaption>
+                      <span>피치 블라스트</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1736041039.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#복숭아맛</a></li>
+                      <li><a href="#">#블라스트</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="line_title">
+              <div class="inner">
+                <span><img src="images/h_title_D.png" alt="" /></span>
+                <div class="line"></div>
+              </div>
+              <a href="sub_icecream.html" class="menu_more">MORE</a>
+            </h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="product coffee">
+                  <figure>
+                    <figcaption>
+                      <span>콘파냐 에스프레소 블라스트</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1730860381.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#콘파냐에스프레소</a></li>
+                      <li><a href="#">#카페브리즈</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product coffee">
+                  <figure>
+                    <figcaption>
+                      <span>에스프레소 블라스트</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1730860305.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#에스프레소</a></li>
+                      <li><a href="#">#카페브리즈</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product coffee">
+                  <figure>
+                    <figcaption>
+                      <span>아이스 아메리카노</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1662093518.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#아메리카노</a></li>
+                      <li><a href="#">#카페브리즈</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product coffee">
+                  <figure>
+                    <figcaption>
+                      <span>917 아메리카노(ICED)</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1738721121.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#대용량커피</a></li>
+                      <li><a href="#">#아이스아메리카노</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="line_title">
+              <div class="inner">
+                <span><img src="images/h_title_E.png" alt="" /></span>
+                <div class="line"></div>
+              </div>
+              <a href="sub_icecream.html" class="menu_more">MORE</a>
+            </h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="product dessert">
+                  <figure>
+                    <figcaption>
+                      <span>노티드 우유 생크림 맘모슈</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1751850628.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#맘모슈</a></li>
+                      <li><a href="#">#노티드</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product dessert">
+                  <figure>
+                    <figcaption>
+                      <span>바나나킥 아이스 모찌</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1696474078.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#바나나킥아이스크림</a></li>
+                      <li><a href="#">#아이스모찌</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product dessert">
+                  <figure>
+                    <figcaption>
+                      <span>(S)팥 바닐라 블라스트 빙수</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1672976319.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#컵빙수</a></li>
+                      <li><a href="#">#팥블라스트</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product dessert">
+                  <figure>
+                    <figcaption>
+                      <span>(R)애플망고 요거트 빙수</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1751682173.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#애플망고</a></li>
+                      <li><a href="#">#요거트빙수</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="line_title">
+              <div class="inner">
+                <span><img src="images/h_title_F.png" alt="" /></span>
+                <div class="line"></div>
+              </div>
+              <a href="sub_icecream.html" class="menu_more">MORE</a>
+            </h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="product blockpack">
+                  <figure>
+                    <figcaption>
+                      <span>블록팩 뉴욕치즈 케이크</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1680829905.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#뉴욕치즈케이크</a></li>
+                      <li><a href="#">#블록팩</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product blockpack">
+                  <figure>
+                    <figcaption>
+                      <span>블록팩 쿠키앤크림</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1680830387.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#쿠키앤크림</a></li>
+                      <li><a href="#">#블록팩</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product blockpack">
+                  <figure>
+                    <figcaption>
+                      <span>블록팩 슈팅스타</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1680829603.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#슈팅스타</a></li>
+                      <li><a href="#">#블록팩</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product blockpack">
+                  <figure>
+                    <figcaption>
+                      <span>블록팩 체리 쥬빌레</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1680829523.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#체리쥬빌레</a></li>
+                      <li><a href="#">#블록팩</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="line_title">
+              <div class="inner">
+                <span><img src="images/h_title_G.png" alt="" /></span>
+                <div class="line"></div>
+              </div>
+              <a href="sub_icecream.html" class="menu_more">MORE</a>
+            </h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="product readypack">
+                  <figure>
+                    <figcaption>
+                      <span>체리 초코 쥬빌레 레디팩</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1676168784.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#체리초코쥬빌레레디팩</a></li>
+                      <li><a href="#">#체리쥬빌레</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product readypack">
+                  <figure>
+                    <figcaption>
+                      <span>자모카 아몬드 훠지 레디팩</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1718100243.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#자모카아몬드훠지</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product readypack">
+                  <figure>
+                    <figcaption>
+                      <span>트리플 민초 레디팩</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1654664728.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#민트초코</a></li>
+                      <li><a href="#">#민초단</a></li>
+                    </ul>
+                  </div>
+                  <div class="buy">
+                    <a href="#">구매</a>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <a href="#" class="product readypack">
+                  <figure>
+                    <figcaption>
+                      <span>아이스 기라델리 초콜릿 레디팩</span>
+                    </figcaption>
+                    <span class="img">
+                      <img src="images/1677731523.png" alt="" />
+                    </span>
+                  </figure>
+                </a>
+                <div class="hashtag_buy">
+                  <div class="hashtag">
+                    <ul>
+                      <li><a href="#">#기라델리</a></li>
+                      <li><a href="#">#초콜릿</a></li>
                     </ul>
                   </div>
                   <div class="buy">

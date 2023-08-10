@@ -179,142 +179,11 @@
       #gnb > ul > li > ul > li > a:hover {
         color: rgb(255, 124, 152);
       }
-      /* 메뉴 끝 */
-      .content {
-        padding: 0 0 130px;
-      }
-      .content > .month {
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3px;
-        background: #fdeb9e;
-      }
-      .content > .banner {
-        height: 697px;
-        display: flex;
-        justify-content: center;
-        background: #d3e8ce;
-      }
-      .br-event {
-        width: 1200px;
-        height: 721px;
-        margin: 0 auto;
-      }
-      .br-event h3 {
-        padding: 100px 0 50px;
-        text-align: center;
-      }
-      .event-list > ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      .event-list > ul > li {
-        width: 288px;
+      .page_header {
         display: flex;
         justify-content: center;
       }
-      .event-list > ul > li > a {
-        width: 288px;
-        display: block;
-        text-align: start;
-      }
-      .event-list > ul > li > a > span {
-        display: block;
-      }
-      .event-list .type {
-        margin: 22px 0 8px;
-      }
-      .event-list .period {
-        margin: 11px 0;
-      }
-      .br-menu {
-        margin: 0 auto;
-        background: url(images/bg_menu.jpg) 50% 0 no-repeat;
-        height: 1157px;
-      }
-      .br-menu > h3 {
-        text-align: center;
-        padding-top: 78px;
-      }
-      .br-menu > .menu_list {
-        position: relative;
-        margin: 0 auto;
-        background: url(images/img_menu_list_230630.png) center no-repeat;
-        width: 1200px;
-        height: 1066px;
-      }
-      .br-menu > .menu_list > .icecream > a {
-        position: absolute;
-        width: 395px;
-        height: 302px;
-        top: 95px;
-        left: 316px;
-      }
-      .br-menu > .menu_list > .icecreamcake > a {
-        position: absolute;
-        width: 276px;
-        height: 472px;
-        top: 95px;
-        right: 172px;
-      }
-      .br-menu > .menu_list > .beverage > a {
-        position: absolute;
-        width: 230px;
-        height: 366px;
-        bottom: 263px;
-        left: 115px;
-      }
-      .br-menu > .menu_list > .coffee > a {
-        position: absolute;
-        width: 329px;
-        height: 292px;
-        bottom: 338px;
-        left: 384px;
-      }
-      .br-menu > .menu_list > .dessert > a {
-        position: absolute;
-        width: 329px;
-        height: 177px;
-        bottom: 122px;
-        left: 384px;
-      }
-      .br-menu > .menu_list > .gift > a {
-        position: absolute;
-        width: 276px;
-        height: 183px;
-        bottom: 278px;
-        right: 171px;
-      }
-      .stor_delivery {
-        display: flex;
-        width: 1200px;
-        height: 547px;
-        margin: 0 auto;
-      }
-      .stor_delivery h3.title {
-        width: 600px;
-        padding: 95px 0px 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .snsbox {
-        width: 1200px;
-        height: 145px;
-        margin: 0 auto;
-      }
-      .snsbox h3.title {
-        padding: 0px 0px 26px;
-        text-align: center;
-      }
-      .snsbox .sns ul {
-        display: flex;
-        justify-content: center;
-      }
-      .snsbox .sns ul li {
-        padding: 0 9px;
-      }
+
       .inner_footer {
         border-top: 1px solid rgb(247, 170, 42);
       }
@@ -424,6 +293,66 @@
         width: 1200px;
         padding: 12px 0 0;
         color: #b1adab;
+      }
+      .list_product .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-left: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+      }
+      .list_product .list .item {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-right: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        box-sizing: border-box;
+      }
+      .list_product .list:first-of-type .item {
+        background: url(images/bg_icecream_corn_3.png) no-repeat bottom;
+        background-size: 50px;
+      }
+      .list_product .list figcaption {
+        width: 298px;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 30px;
+      }
+      .list_product .list .item img {
+        position: absolute;
+        left: 60px;
+        bottom: 8px;
+        width: 180px;
+        height: 180px;
+      }
+      .list .item .hashtag_buy ul {
+        display: flex;
+        justify-content: center;
+      }
+      .list .item .hashtag_buy ul li {
+        padding-right: 5px;
+      }
+      .list .item .hashtag_buy ul li a {
+        font-size: 13px;
+        color: #9d9d9d;
+      }
+      .list .item .buy {
+        text-align: center;
+        padding-top: 7px;
+      }
+      .list .item .buy a {
+        display: inline-block;
+        line-height: 21px;
+        width: 58px;
+        height: 21px;
+        font-size: 11px;
+        background: #d3c1ab;
+        border-radius: 25px;
+        color: #fff;
       }
     </style>
   </head>
@@ -537,127 +466,11 @@
             </nav>
           </div>
         </div>
+        <div class="page_header">
+          <p><img src="images/bg_main_menu.gif" alt="" /></p>
+        </div>
       </header>
-      <article class="content">
-        <div class="month">
-          <div>
-            <a href="flavor_of_the_month.html"
-              ><img src="images/1751880471.png" alt=""
-            /></a>
-          </div>
-        </div>
-        <div class="banner">
-          <div>
-            <a href="#"><img src="images/1688791663.png" alt="" /></a>
-          </div>
-        </div>
-        <section class="br-event">
-          <h3><img src="images/h_event.png" alt="" /></h3>
-          <div class="event-list">
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="images/banner_delivery.png" alt="" />
-                  <span class="type"
-                    ><img src="images/stit_store.gif" alt=""
-                  /></span>
-                  <span class="title"
-                    >해피오더 딜리버리로 간편하게 주문하세요!</span
-                  >
-                  <span class="period">상시진행</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="images/banner_delivery_bm.png" alt="" />
-                  <span class="type"
-                    ><img src="images/stit_store.gif" alt=""
-                  /></span>
-                  <span class="title">배달의 민족에서 빠르게 주문하세요!</span>
-                  <span class="period">상시진행</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="images/banner_delivery_ygy.png" alt="" />
-                  <span class="type"
-                    ><img src="images/stit_store.gif" alt=""
-                  /></span>
-                  <span class="title">요기요에서 손쉽게 주문하세요!</span>
-                  <span class="period">상시진행</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="images/banner_delivery_kakao.png" alt="" />
-                  <span class="type"
-                    ><img src="images/stit_store.gif" alt=""
-                  /></span>
-                  <span class="title"
-                    >카카오톡 주문하기에서 편리하게 주문하세요!</span
-                  >
-                  <span class="period">상시진행</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="br-menu">
-          <h3 class="title"><img src="images/h_menu.png" alt="" /></h3>
-          <div class="menu_list">
-            <div class="icecream"><a href="#"></a></div>
-            <div class="icecreamcake"><a href="#"></a></div>
-            <div class="beverage"><a href="#"></a></div>
-            <div class="coffee"><a href="#"></a></div>
-            <div class="dessert"><a href="#"></a></div>
-            <div class="gift"><a href="#"></a></div>
-          </div>
-        </section>
-        <div class="stor_delivery">
-          <section class="store">
-            <h3 class="title">
-              <img src="images/h_store.png" alt="" />
-            </h3>
-            <div class="box">
-              <a href="#"><img src="images/img_store.jpg" alt="" /></a>
-            </div>
-          </section>
-          <section class="order">
-            <h3 class="title">
-              <img src="images/h_happyorder_delivery.png" alt="" />
-            </h3>
-            <div class="box">
-              <a href="#"
-                ><img src="images/img_happyorder_delivery.png" alt=""
-              /></a>
-            </div>
-          </section>
-        </div>
-        <section class="snsbox">
-          <h3 class="title">
-            <img src="images/h_sns.png" alt="" />
-          </h3>
-          <div class="sns">
-            <ul>
-              <li>
-                <a href="#"><img src="images/sns_facebook.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="images/sns_twitter.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="images/sns_blog.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="images/sns_instagram.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="images/sns_youtube.png" alt="" /></a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </article>
+
       <footer>
         <div class="inner_footer">
           <div class="policy">
@@ -723,15 +536,6 @@
                     <li><a href="#" target="_blank">파리바게뜨</a></li>
                     <li><a href="#" target="_blank">던킨도너츠</a></li>
                   </ul>
-                  <!-- <select name="family" id="family">
-                                    <option>FAMILY SITE</option>
-                                    <option value="배스킨스쿨"></option>
-                                    <option value="배스킨스쿨"></option>
-                                    <option value="배스킨스쿨"></option>
-                                    <option value="배스킨스쿨"></option>
-                                    <option value="배스킨스쿨"></option>
-                                    <option value="배스킨스쿨"></option>
-                                </select> -->
                 </div>
               </div>
             </div>
