@@ -188,38 +188,40 @@
         margin: 0 auto;
         min-width: 1200px;
       }
-      .flavor nav {
-        position: relative;
-        width: 100%;
-        min-width: 1100px;
-        margin: 0 auto;
-      }
-      .flavor nav ul {
+      .logger {
         position: fixed;
         top: 50%;
-        right: 0px;
+        right: 18%;
         z-index: 10;
       }
-      .flavor nav ul li a {
-        display: inline-block;
-        overflow: hidden;
+      .logger ul {
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .logger ul li a {
+        position: relative;
+        display: block;
         width: 43px;
         height: 43px;
-        border-width: 1px;
-        border-color: #6ebc8e;
-        border-style: solid;
-        background-color: rgba(255, 255, 255, 0.5);
         border-radius: 24px;
-        margin-bottom: 7px;
-        font-size: 0px;
-        text-align: left;
-        line-height: 20px;
-        box-sizing: border-box;
-        transition: all 0.2s ease;
+        border: 1px solid #6ebc8e;
+        background-color: rgba(255, 255, 255, 0.5);
+        line-height: 43px;
+        overflow: hidden;
+        transition: 0.2s;
       }
-      .flavor .area_wrap {
-        width: 100%;
+      .logger ul li a img {
+        position: absolute;
+        left: 0;
       }
+      .logger ul li:hover a {
+        width: 150px;
+        background: #fff;
+      }
+
       .flavor .area1 {
         width: 100%;
         height: 795px;
@@ -236,6 +238,7 @@
         margin-bottom: 20px;
         background: url(images/flavor_img_4.png) center top repeat-x;
       }
+
       .inner_footer {
         border-top: 1px solid rgb(247, 170, 42);
       }
@@ -521,25 +524,6 @@
       </header>
       <section class="flavor">
         <div class="move">
-          <nav class="logger">
-            <ul>
-              <li>
-                <a href="#" class="btn1"
-                  ><img src="images/nav_01_off.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#" class="btn2"
-                  ><img src="images/nav_03_off.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="#" class="btn3"
-                  ><img src="images/nav_04_off.png" alt=""
-                /></a>
-              </li>
-            </ul>
-          </nav>
           <section class="area_wrap">
             <section class="area1"></section>
             <section class="area2"></section>
@@ -636,5 +620,31 @@
         </div>
       </footer>
     </div>
+    <nav class="logger">
+      <ul>
+        <li>
+          <a href="#" class="btn1"
+            ><img src="images/nav_01_off.png" alt="" /><img
+              src="images/nav_01_on.png"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="btn2"
+            ><img src="images/nav_03_off.png" alt="" /><img
+              src="images/nav_03_on.png"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="btn3"
+            ><img src="images/nav_04_off.png" alt="" /><img
+              src="images/nav_04_on.png"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <script></script>
   </body>
 </html>
